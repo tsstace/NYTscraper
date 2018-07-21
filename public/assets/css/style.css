@@ -1,0 +1,43 @@
+a {
+    color: #e6b00f;
+}
+
+.articles-holder {
+    list-style: none;
+    -webkit-padding-start: 0;
+}
+
+.article {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #151515;
+}
+
+.article h4 {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #1e1f21;
+}
+
+.article h4 a {
+    color: white;
+}
+
+.article h4 > small > a {
+    color: #e6b00f;
+}
+
+.form-control {
+    background-color: #080808;
+}
+
+.modal-title {
+    color: #77b300;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.modal-title > span {
+    color: #fff;
+}

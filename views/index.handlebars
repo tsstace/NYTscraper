@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="row">
+    <div class="jumbotron">
+      <h1>Welcome to the New York Times scraper</h1>
+      <p class="lead">Scraping all the news that's fit to skim</p>
+      <hr class="my-2">
+      <lg>Source:
+        <a href="https://www.nytimes.com/">The New York Times</a>
+      </lg>
+    </div>
+    <div class="row">
+      <div class="articles col-xs-12">
+        <ul class="articles-holder">
+          {{#each articles}}
+          <li class="article">
+            <h4>
+              <a href="{{link}}" target="_blank">{{title}}</a>
+              <small>(
+                <a href="http://{{linkPrev}}" target="_blank">{{linkPrev}}</a>)</small>
+            </h4>
+            <small>
+              <a href="#" class="note btn {{#if note}}btn-success{{else}}btn-info{{/if}} btn-sm" data-id="{{_id}}" data-title="{{title}}">
+                {{#if note}}View Note{{else}}Add Note{{/if}}
+              </a>
+            </small>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal" id="viewNote" tabindex="-1" role="dialog" aria-labelledby="viewNote">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <form id="note-form" action="/articles" method="POST">
+        <div class="note-data hidden"></div>
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="viewNote">
+            [NOTE]
+            <span></span>
+          </h4>
+        </div>
+        <div class="modal-body">
+          <input type="text" name="title" class="form-control" placeholder="Enter Note Title Here">
+          <br />
+          <textarea name="body" id="" class="form-control" cols="30" rows="10" placeholder="Enter note contents here"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="submit" id="save-note" class="btn btn-primary">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
