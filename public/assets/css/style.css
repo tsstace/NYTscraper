@@ -2,6 +2,30 @@ a {
     color: #e6b00f;
 }
 
+body {
+    background-image: url("../images/typeset.jpg");
+  width: 100%;
+  background-repeat: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.jumbotron {
+    height:100%;
+    width:100%;
+}
+
 .articles-holder {
     list-style: none;
     -webkit-padding-start: 0;
