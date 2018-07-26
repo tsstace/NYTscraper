@@ -9,7 +9,7 @@ This web application utilizes Cheerio and Mongoose to scrape headlines from "The
 - Mongoose
 - Heroku
 
-# Node packages included:
+# NPM packages included:
 - Express
 - Handlebars
 - Body-parser
