@@ -1,5 +1,7 @@
 # :newspaper: NYTscraper :memo:
 
+This web application utilizes Cheerio and Mongoose to scrape headlines from "The New York Times" 'Business' section.  The user may add notes for an article as well as view comments that have been previously entered.
+
 # Technologies utilized:
 - Node.js
 - Handlebars
