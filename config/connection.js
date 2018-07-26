@@ -1,7 +1,7 @@
 var mongoose = require("mongoose");
 
 // Database configuration with mongoose
-mongoose.connect("mongodb://localhost/scraped_news");
+mongoose.connect("mongodb://localhost/nytscraper");
 var db = mongoose.connection;
 
 // Show any mongoose errors

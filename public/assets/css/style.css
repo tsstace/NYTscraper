@@ -31,13 +31,3 @@ a {
 .form-control {
     background-color: #080808;
 }
-
-.modal-title {
-    color: #77b300;
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
-.modal-title > span {
-    color: #fff;
-}
