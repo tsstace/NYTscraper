@@ -1,1 +1,1 @@
-# NYTscraper
+:newspaper: # NYTscraper :memo:
